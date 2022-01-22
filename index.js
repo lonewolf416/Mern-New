@@ -22,4 +22,4 @@ mongoose
   .then(() => console.log("DB Connected"))
   .catch((err) => console.log(err, "ye msla hai"));
 
-app.listen(3000);
+app.listen("https://rsmernapp.herokuapp.com/");
