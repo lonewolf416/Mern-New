@@ -11,7 +11,7 @@ const app = express();
 app.get("/", (req, res) => {
   res.json({
     status: true,
-    error: "Yup We Are Live",
+    message: "Yup We Are Live",
   });
 });
 
