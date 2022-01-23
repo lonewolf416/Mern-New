@@ -61,7 +61,7 @@ router.post("/login", async (req, res) => {
       {
         email,
         password,
-        user: user._id,
+        id: user._id,
       },
       process.env.SECRET_KEY
       // {
