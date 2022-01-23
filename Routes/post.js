@@ -61,6 +61,7 @@ router.post("/login", async (req, res) => {
       {
         email,
         password,
+        user: user._id,
       },
       process.env.SECRET_KEY
       // {
@@ -83,6 +84,5 @@ router.post("/login", async (req, res) => {
 router.post("/", auth, (req, res) => {
   res.status(200).send("Welcome 🙌 ");
 });
-
 
 module.exports = router;
