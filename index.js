@@ -9,7 +9,10 @@ require("dotenv/config");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("hello motu");
+  res.json({
+    status: true,
+    error: "Yup We Are Live",
+  });
 });
 
 app.use(bodyParser.json());
@@ -22,4 +25,4 @@ mongoose
   .then(() => console.log("DB Connected"))
   .catch((err) => console.log(err, "ye msla hai"));
 
-app.listen(443);
+app.listen(3000);
